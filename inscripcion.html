@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZGAMER - Inscríbete</title>
+    <!-- Enlazar con CSS -->
+    <link rel="stylesheet" href="formularios.css" />
+  </head>
+  <body>
+  
+
+    <main>
+      <h1 style="margin-top: 20px;">Inscríbete</h1>
+      <!-- Formulario de inscripción -->
+      <form class="formulario-reserva">
+        <div class="form-group">
+          <label for="nombre">Nombre completo:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Introduce tu nombre completo"
+            required
+          /> <!-- Input para introducir la información -->
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Introduce tu correo electrónico"
+            name="email"
+            required
+          /> <!-- Input para introducir la información -->
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input
+            type="tel"
+            id="telefono"
+            placeholder="Introduce tu teléfono"
+            name="telefono"
+            required
+          /> <!-- Input para introducir la información -->
+        </div>
+        <!-- Todos los Input en required para que no se dejen en blanco -->
+        <div class="form-group">
+          <label for="juegos">Elije juego:</label>
+          <select id="juegos" name="juegos" required> <!-- Select para escoger el juego -->
+            <option value="">Selecciona un juego</option>
+            <option>League of Legends</option>
+            <option>Call of Duty</option>
+            <option>Valorant</option>
+            <option>Rainbox Six Siege X</option>
+            <option>Clash Royale</option>
+            <option>Fortnite</option>
+          </select>
+        </div>
+        <!-- Botón para enviar el formulario -->
+        <button type="submit" class="boton-reserva">Reservar Plaza</button>
+      </form>
+    </main>
+    <!-- Botón para volver a la página juegos.html-->
+    <a href="juegos.html" class="volver">&#8592;</a>
+    
+  </body>
+</html>

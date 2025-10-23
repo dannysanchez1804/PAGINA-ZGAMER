@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZGAMER - Reserva tu Plaza</title>
+    <!-- Enlazar con CSS externo -->
+    <link rel="stylesheet" href="formularios.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Reserva tu plaza</h1>
+
+      <!-- Formulario -->
+      <form class="formulario-reserva">
+        <div class="form-group">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required />
+        </div>
+
+        <div class="form-group">
+          <label for="fecha">Fecha del evento:</label>
+          <input type="date" id="fecha" name="fecha" required />
+        </div>
+
+        <div class="form-group">
+          <label for="horario">Horario preferido:</label>
+          <select id="horario" name="horario" required>
+            <option value="">Selecciona un horario</option>
+            <option value="mañana">Mañana (9:00 - 13:00)</option>
+            <option value="tarde">Tarde (14:00 - 17:00)</option>
+            <option value="noche">Noche (18:00 - 20:00)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="participantes">Número de participantes:</label>
+          <input
+            type="number"
+            id="participantes"
+            name="participantes"
+            min="1"
+            max="50"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="comentarios">Comentarios adicionales:</label>
+          <textarea
+            id="comentarios"
+            name="comentarios"
+            rows="4"
+            placeholder="Cuéntanos sobre el tipo de evento, juegos preferidos, etc."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="boton-reserva">Reservar Plaza</button>
+      </form>
+    </main>
+
+    <a href="juegos.html" class="volver">&#8592;</a>
+  </body>
+</html>
+ 

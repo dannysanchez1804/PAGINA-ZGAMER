@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZGAMER - Juegos</title>
+    <!-- Conectar con el CSS -->
+    <link rel="stylesheet" href="juegos.css" />
+  </head>
+  <body>
+    <!-- Encabezado de la página -->
+    <header>
+      <a href="zgamer.html">
+        <img
+          src="https://i.postimg.cc/fW094vhW/Copilot-20250925-175534.png"
+          alt="ZGAMER LOGO"
+          style="height: 150px"
+        />
+      </a>
+      <nav>
+        <!-- Enlaces a otras páginas -->
+        <ul>
+          <li><a href="invitados.html">INVITADOS</a></li>
+          <li><a href="juegos.html">JUEGOS</a></li>
+          <li><a href="actividades.html">ACTIVIDADES</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Sección principal -->
+    <div id="games1" class="games">
+      <div class="game-block normal">
+        <div class="text">
+          <h2>COMPETICIONES</h2>
+          <p>
+            Vive la emoción de los juegos en su máxima expresión. En este
+            espacio podrás disfrutar de enfrentamientos en vivo, donde los
+            mejores jugadores demostrarán sus habilidades frente al público.
+          </p>
+          <a href="inscripcion.html" class="btn">Inscríbete</a>
+        </div>
+        <!-- Carrusel de imágenes -->
+        <div class="carousel">
+          <img
+            id="imagen1"
+            src="https://i.pinimg.com/736x/0f/e7/33/0fe733ad602f4738906615b00316b1b5.jpg"
+            alt="Imagen 1"
+          />
+        </div>
+      </div>
+
+      <div class="game-block reverse">
+        <div class="text">
+          <h2>EXPERIENCIAS INDIVIDUALES</h2>
+          <p>
+            Sumérgete en mundos épicos con nuestras experiencias personalizadas.
+            Reserva tu espacio y disfruta de partidas únicas en dos de los
+            títulos más icónicos: explora el salvaje oeste en Red Dead
+            Redemption 2 o deja volar tu creatividad en Minecraft
+          </p>
+          <a href="reservaPlaza.html" class="btn">Reserva</a>
+        </div>
+        <!-- Carrusel de imágenes -->
+        <div class="carousel">
+          <img
+            id="imagen2"
+            alt="Imagen 2"
+            src="https://i.pinimg.com/1200x/39/9e/a0/399ea0626c947b3dce1dc940880a7e9d.jpg"
+          />
+        </div>
+      </div>
+
+      <div class="game-block normal">
+        <div class="text">
+          <h2>OTRAS EXPERIENCIAS</h2>
+          <p>
+            Descubre una amplia selección de títulos pensados para todos los
+            gustos y edades.
+          </p>
+        </div>
+        <!-- Carrusel de imágenes -->
+        <div class="carousel">
+          <img
+            id="imagen3"
+            src="https://i.pinimg.com/1200x/a6/b6/ac/a6b6ac5ec950f54a2a2d0d1449784cac.jpg"
+            alt="Imagen 3"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Footer de la página-->
+    <footer>
+      <p>&copy; 2025 ZGAMER. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript para hacer funcional los carruseles -->
+    <script>
+      // Array con enlaces a las fotos de los carruseles
+      const carruseles = [
+        {
+          id: "imagen1",
+          imgs: [
+            "https://i.pinimg.com/736x/0f/e7/33/0fe733ad602f4738906615b00316b1b5.jpg",
+            "https://i.pinimg.com/736x/6f/e5/7b/6fe57b6470262c6ca8d00ef073af7a6a.jpg",
+            "https://i.pinimg.com/1200x/81/df/93/81df9322d5cc3258133e8d871c41ff55.jpg",
+            "https://i.pinimg.com/736x/1b/7c/31/1b7c31d3936bd2cc181c37f649aa172e.jpg",
+            "https://i.pinimg.com/1200x/e0/78/23/e078231ec76b7d83ca180ca495e76df5.jpg",
+            "https://i.pinimg.com/736x/92/51/1c/92511cdffca01187823a36026285892b.jpg",
+          ],
+          index: 0,
+        },
+        {
+          id: "imagen2",
+          imgs: [
+            "https://i.pinimg.com/736x/cd/77/7c/cd777c2fee1e717699b580430fec04c0.jpg",
+          ],
+          index: 0,
+        },
+        {
+          id: "imagen3",
+          imgs: [
+            "https://i.pinimg.com/736x/05/7b/82/057b82a8911c32ae0e185f8ed1e79943.jpg",
+            "https://i.pinimg.com/736x/a8/10/5b/a8105b2accb57bc9647fd55ab00fb4bf.jpg",
+            "https://i.pinimg.com/736x/ac/9c/b9/ac9cb9c904b9aae3378cc302a7ee607e.jpg",
+          ],
+          index: 0,
+        },
+      ];
+
+      // Para cada Carrusel, cambiar el enlace cada 4s
+      carruseles.forEach((carousel) => {
+        const imgElement = document.getElementById(carousel.id);
+        setInterval(() => {
+          carousel.index = (carousel.index + 1) % carousel.imgs.length;
+          imgElement.src = carousel.imgs[carousel.index];
+        }, 4000);
+      });
+    </script>
+  </body>
+</html>

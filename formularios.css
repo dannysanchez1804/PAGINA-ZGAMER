@@ -1,0 +1,93 @@
+/* Estilos generales */
+body {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;/*Fuente general del sitio*/
+  background-image: url("https://i.postimg.cc/W3KLShrS/fondo-png.png"); /*Imagen de fondo*/
+  background-size: cover; /*La imagen cubre toda la pantalla*/
+  background-position: center 20%;/*Posicion del fondo(centrado con leve desplazamiento)*/
+  margin: 0;/*Quitar margen del fondo*/
+  padding: 0;/*Quitar relleno por defecto*/
+  color: white; /*Color del texto general*/
+}
+
+h1 {
+  color: white;/*Color del titulo*/
+  font-size: 3em;/*Tamaño grande del texto*/
+  text-align: center;/*Centrar el titulo*/
+  margin-top: 0; /*Quitar margen superior*/
+}
+
+/* Formulario */
+.formulario-reserva {
+  width: 500px;/*Ancho del formulario*/
+  margin: 30px auto; /*Centrarlo horizontalmente con margen vertical*/
+  padding: 30px; /*Espacio interno*/
+  background: rgba(13, 27, 42, 0.9); /*Fondo oscuro con transparencia*/
+  border-radius: 10px; /*Bordes redondeados*/
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);/*Sombre suave*/
+}
+
+.form-group {
+  margin-bottom: 20px; /*Espacio entre los campos*/
+}
+
+.form-group label {
+  display: block; /*Mostrar la etiqueta en una linea separada*/
+  color: white; /*Texto blanco*/
+  font-weight: bold; /*Texto en negrita*/
+  margin-bottom: 5px; /*Espacio inferior entre etiqueta y campo*/
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%; /*Que ocupe todo el ancho del contenedor*/
+  padding: 12px; /*Espaciado interno*/
+  border: none; /*Sin bordes visibles*/
+  border-radius: 5px; /*Bordes redondeados*/
+  font-size: 16px; /*Tamaño del texto*/
+  box-sizing: border-box; /*Incluir padding dentro del ancho total*/
+}
+
+textarea {
+  resize: vertical; /*Permitir cambiar el tamaño solo verticalmente*/
+}
+
+/* Botón */
+.boton-reserva {
+  width: 100%;/*Boton del ancho completo*/
+  padding: 15px; /*Espaciado interno*/
+  background: linear-gradient(45deg, #00aaff, #0066cc); /*Fondo con degradado azul*/
+  color: white; /*Texto blanco*/
+  border: none; /*Sin borde*/
+  border-radius: 5px; /*Bordes redondeados*/
+  font-size: 18px; /*Tamaño del texto*/
+  font-weight: bold; /*Texto en negrita*/
+  cursor: pointer; /*Cambiar el cursor al pasar por encima*/
+  transition: all 0.3s; /*Animacion suave al interactuar*/
+}
+
+.boton-reserva:hover {
+  transform: translateY(-2px); /*Efecto de elevacion al pasar el mouse*/
+  box-shadow: 0 6px 20px rgba(0, 170, 255, 0.4); /*Sombra azul brillante*/
+}
+
+.volver {
+  display: inline-block;/*Mostrar como bloque en linea*/
+  padding: 10px 20px; /*Espaciado interno*/
+  color: white; /*Texto blanco*/
+  border: 2px solid white; /*Borde blanco*/
+  background-color: transparent; /*Fondo transparente*/
+  border-radius: 5px; /*Bordes redondeados*/
+  text-decoration: none; /*Quitar subrayado*/
+  font-size: 16px;/*Tamaño del texto*/
+  font-weight: bold; /*Texto en negrita*/
+  transition: all 0.3s; /*Transicion suave*/
+  cursor: pointer; /*Cambiar el cursor al pasar*/
+  margin-left: 62%;/*Espacio desde la izquierda*/
+  margin-bottom: 200px;/*Espacio inferior grande*/
+}
+
+.volver:hover {
+  background-color: white; /*Fondo blanco al pasar el raton*/
+  color: #0d1b2a; /*Texto oscuro al pasar el raton*/
+}
