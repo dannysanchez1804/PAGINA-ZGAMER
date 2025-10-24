@@ -43,7 +43,7 @@
           <img
             id="imagen1"
             src="https://i.pinimg.com/736x/0f/e7/33/0fe733ad602f4738906615b00316b1b5.jpg"
-            alt="Imagen 1"
+            alt="Juegos competitivos"
           />
         </div>
       </div>
@@ -63,7 +63,7 @@
         <div class="carousel">
           <img
             id="imagen2"
-            alt="Imagen 2"
+            alt="Experiencias Individuales"
             src="https://i.pinimg.com/1200x/39/9e/a0/399ea0626c947b3dce1dc940880a7e9d.jpg"
           />
         </div>
@@ -82,7 +82,7 @@
           <img
             id="imagen3"
             src="https://i.pinimg.com/1200x/a6/b6/ac/a6b6ac5ec950f54a2a2d0d1449784cac.jpg"
-            alt="Imagen 3"
+            alt="Otras experiencias (generales)"
           />
         </div>
       </div>
@@ -130,7 +130,7 @@
       carruseles.forEach((carousel) => {
         const imgElement = document.getElementById(carousel.id);
         setInterval(() => {
-          carousel.index = (carousel.index + 1) % carousel.imgs.length;
+          carousel.index = (carousel.index + 1) % carousel.imgs.length; // Incrementar index
           imgElement.src = carousel.imgs[carousel.index];
         }, 4000);
       });
