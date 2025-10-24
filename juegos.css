@@ -8,7 +8,7 @@ body {
 
 /* Header */
 header {
-  background-color: #000; /* Fondo oscuro */
+  background-color: #023a58; /* Fondo oscuro */
   display: flex; /* Usar flexbox para organizar el contenido */
   justify-content: space-between; /* Separar elementos del encabezado */
   align-items: center; /* Centrar verticalmente los elementos */
@@ -105,7 +105,7 @@ footer {
   width: 100%; /* Ocupar todo el ancho */
   text-align: center; /* Centrar el texto */
   padding: 15px; /* Espacio interno */
-  background-color: #000; /* Fondo oscuro */
+  background-color: #023a58; /* Fondo oscuro */
   font-size: 0.9em; /* Tamaño de fuente más pequeño */
   bottom: 0; /* Posicionar al fondo */
   left: 0; /* Alinear al borde izquierdo */

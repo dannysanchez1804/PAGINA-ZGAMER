@@ -8,7 +8,7 @@ body {
 
 /* Header */
 .header {
-    background-color: #000000; /* Fondo negro  */
+    background-color: #023a58; /* Fondo negro  */
     padding: 15px 50px; /* Espaciado interno superior/inferior e izquierdo/derecho */
     display: flex; /*  Alinear contenido */
     justify-content: space-between; /* Separar elementos a los extremos */
@@ -273,7 +273,7 @@ body {
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #000000;
+    background-color: #023a58;
     font-size: 0.9em;
     margin-top: 80px;
 }
