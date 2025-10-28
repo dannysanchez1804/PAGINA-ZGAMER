@@ -31,6 +31,7 @@ h1 {
 }
 
 .form-group label {
+  margin-top: 20px;
   display: block; /*Mostrar la etiqueta en una linea separada*/
   color: white; /*Texto blanco*/
   font-weight: bold; /*Texto en negrita*/
